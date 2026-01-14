@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+    <style>
+        body {
+             font: normal 20pt Arial;
+             /*definindo a fonte do corpo do site*/
+
+                color: rgb(0, 0, 0);
+             /*definindo a cor do texto*/
+
+             font-style: italic;
+             /*definindo o estilo da fonte como itálico*/
+
+                background-color: aliceblue;
+             /*definindo a cor de fundo do site*/
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Manipulando Texto em JavaScript</h2>
+            <!--Título-->
+        <p>Vamos analisar o seu nome!</p>
+            <!--Parágrafo-->
+
+    <script>
+
+        var nome = window.prompt('Qual é o seu nome?')
+            //"document" é o documento html "writeln" escreve no documento
+        document.writeln(`<p>Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</p>`)
+        //length conta a quantidade de caracteres que tem na variável
+            document.writeln(`<p>Seu nome em maiúsculas é <strong>${nome.toUpperCase()}.</strong></p>`)
+        //toUpperCase deixa todas as letras maiúsculas
+        document.writeln(`<p>Seu nome em minúsculas é <strong>${nome.toLocaleLowerCase()}.</strong></p>`)
+        //toLowerCase deixa todas as letras minúsculas
+
+    </script>
+</body>
+</html>
